@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 80px auto 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #1a611e;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a611e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #8bc18f;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* Banner Image */
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 60px;
+}
+
+/* Footer */
+.website__rights {
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  background-color: #1a611e;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  h1, h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+
+</body>
+</html>
